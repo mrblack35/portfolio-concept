@@ -1,2 +1,2 @@
 # portfolio-concept
-Portfolio to showcase future projects
+Portfolio site to showcase future projects
