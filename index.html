@@ -5,44 +5,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kevin Blackwell | Web Developer</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@200;300;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@200;300;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;400&display=swap" rel="stylesheet">
 </head>
-<body id="home-page">
-    <nav class="navbar-container">
-        <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
-        <ul class="navbar-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="my_story.html">Story</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="#">Download CV</a></li>
-        </ul>
-        <button id="navbar-button"><a href="projects.html">Projects</a></button>
-    </nav>
-    <div id="container">
-        <div id="main">
-            <div class="main-headers">
-                <h1>Kevin Blackwell</h1>
-                <p>Front-end web developer, HTML5, CSS3, Javascript, Bootstrap</p>
-                <H3>I create amazing<br>web solutions</H3>
-                <button class="main-projects-button"><a href="projects.html">View My Projects</a></button>
+<body>
+    <nav class="primary-nav">
+        <div class="navbar-wrapper">
+            <div class="navbar-menu">
+                <a href="#home-page" class="link-item">Home</a>
+                <a href="#about-me-page" class="link-item">Story</a>
+                <a href="#projects-page" class="link-item">Projects</a>
+                <a href="#contact-page" class="link-item">Contact</a>
+                <a href="#/" class="link-item">Download CV</a>
             </div>
+            <button class="jump-to-projects-button"><a href="#projects-page">Projects</a></button>
+    
+            <a href="#!" class="toggle-mobile-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
         </div>
-    </div>
-    <footer> 
-        <div class="footer">
-            <p>© Copyright Kevin Blackwell</p>
-            <div class="social-container">
-                <a class="social-github" href="https://github.com/mrblack35" target="_blank" title="My GitHub Page" class="social-github-icon"><img src="imgs/GitHub-Mark-light-120px-plus.png" alt="GitHub Logo"></a>
+    </nav>
+    <main id="home-page">
+        <img class="main-image" src="imgs/background-wave-02.png" alt="wave-with-lines-and-points">
+        <header class="main-header">
+            <h1 class="name">Kevin Blackwell</h1>
+            <p class="skillset">Front-end web developer, HTML5, CSS, Javascript</p>
+            <p class="strap">I create amazing<br>web solutions</p>
+            <button class="view-projects-button"><a href="#projects-page">View Projects</a></button>
+        </header>
+    </main>
+
+    <div id="about-me-page" class="about-me-wrapper">
+        <article class="about-me-article">
+            <img src="imgs/globe-large-03.png" class="back-globe" alt="globe with lines and dots">
+            <h2 class="story-header">My Story</h2>
+            <p>Hi, my name is <strong>Kevin Blackwell</strong>. I’m a hardworking and confident individual with a wealth of experience working with data and managing teams to complete multiple projects.</p>
+            <p>When I’m not handling data, I like to keep fit and challenge myself, playing mixed doubles in my local badminton club. I’m also really excited to be a member of the volunteer marshals club. As a fan of Motorsport, it will give me the opportunity to get closer to the action.</p>
+            <p>My earliest experience of coding was at a young age, learning to code a basic game. Having the ability to see the result of my hard work was amazing. 
+            <br>Later, while studying graphic design, I was fascinated with the idea of building interactivity into my projects, but the opportunity wasn’t there at the time. It wasn’t until I started working with data in my current role, that I really got the chance to use my logical and problem-solving skills to create solutions to technical problems, using code.</p>
+            <p>In the future I plan to develop my knowledge of back-end processes, with the aim of becoming a full-stack developer. Later I would like to bring my knowledge of managing staff to help nurture teams and grow the company. Also being visually creative I can bring my skills and knowledge to projects, to further enhance collaborations with designers or photographers.</p>
+            <div class="skills-list-wrapper">
+                <h3 class="subheader">Frontend Skills</h3>
+                <div class="top-skill"><p class="skills-text" style="width: 80%;">HTML5</p></div>
+                <div><p class="skills-text" style="width: 80%;">CSS3</p></div>
+                <div><p class="skills-text" style="width: 65%;">JavaScript</p></div>
+                <div><p class="skills-text" style="width: 85%;">Photoshop</p></div>
+                <div><p class="skills-text" style="width: 65%;">Prototyping</p></div>
+                <div><p class="skills-text" style="width: 80%;">Design</p></div>
+                <div class="last-skill"><p class="skills-text" style="width: 85%;">Photography</p></div>
             </div>
+        </article>
+    </div>
+
+    <div id="projects-page" class="projects-wrapper">
+        <div class="projects-inner-container swiper">
+            <ul class="projects-inner swiper-wrapper">
+                <li class="project swiper-slide">
+                    <img src="imgs/bentley-continental-gt3-hero-page.jpg" class="project-image" alt="bentley-continental-gt3-website">
+                    <section class="project-section">
+                        <h3 class="project-header">Bentley GT3 Website</h3>
+                        <ul class="features">
+                            <li>Rethink of the Website UX and UI</li>
+                            <li>Cohesive navigation</li>
+                            <li>Simbolic of the energy and attitude</li>
+                        </ul>
+                        <p class="project-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic maiores vitae laboriosam dolorem nobis animi, placeat. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        </p>
+                        <div class="button-wrapper">
+                            <button class="see-code-button"><a href="#!">See Code</a></button>
+                            <button class="visit-project-button"><a href="#!">Visit Website</a></button>  
+                        </div>
+                    </section>
+                </li>
+                <li class="project swiper-slide">
+                    <img src="imgs/bentley-continental-gt3-hero-page.jpg" class="project-image" alt="bentley-continental-gt3-website">
+                    <section class="project-section">
+                        <h3 class="project-header">Website Project 2</h3>
+                        <ul class="features">
+                            <li>description</li>
+                            <li>description</li>
+                            <li>description</li>
+                        </ul>
+                        <p class="project-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic maiores vitae laboriosam dolorem nobis animi, placeat. Dolor modi praesentium ratione eius, laborum magnam illo ab corrupti numquam nisi?</p>
+                        <div class="button-wrapper">
+                            <button class="see-code-button"><a href="#!">See Code</a></button>
+                            <button class="visit-project-button"><a href="#!">Visit Website</a></button>  
+                        </div>
+                    </section>
+                </li>
+                <li class="project swiper-slide">
+                    <img src="imgs/bentley-continental-gt3-hero-page.jpg" class="project-image" alt="bentley-continental-gt3-website">
+                    <section class="project-section">
+                        <h3 class="project-header">Website Project 3</h3>
+                        <ul class="features">
+                            <li>description</li>
+                            <li>description</li>
+                            <li>description</li>
+                        </ul>
+                        <p class="project-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero atque cum non dolore animi, quasi quas repellendus nemo distinctio consequuntur nesciunt, asperiores error est, et neque explicabo mollitia!</p>
+                        <div class="button-wrapper">
+                            <button class="see-code-button"><a href="#!">See Code</a></button>
+                            <button class="visit-project-button"><a href="#!">Visit Website</a></button>  
+                        </div>
+                    </section>
+                </li>
+            </ul>
+        </div>
+        <div class="projectPrev swiper-button-prev"></div>
+        <div class="projectNext swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div id="contact-page" class="contact-wrapper">
+        <img class="contact-image" src="imgs/background-wave-05.png" alt="wave-with-lines-and-points">
+        <header class="contact-header">
+            <p class="lead">In need of a</p> 
+            <h2 class="question">Front-end web developer<br>and designer?</h2>
+            <button class="contact-email-button"><a href="mailto:kevin.blackwell1@outlook.com?subject=Website enquiry">Get in touch</a></button>
+        </header>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-wrapper">
+            <p>© Copyright Kevin Blackwell</p>
+            <a class="social-github" href="https://github.com/mrblack35/portfolio-concept/" target="_blank" title="My GitHub Page" class="social-github-icon"><img src="imgs/GitHub-Mark-light-120px-plus.png" alt="GitHub Logo"></a>
         </div>
     </footer>
+
 </body>
-<script src="jscript.js"></script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="jscript2.js"></script>
 </html>
