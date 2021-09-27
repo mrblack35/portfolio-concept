@@ -294,14 +294,14 @@ h1 {
 }
 
 .about-me-wrapper {
+    max-width: 1200px;
     position: relative;
     margin: 0 auto;
     background-color: rgba(130, 130, 130, .6);
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
     .about-me-wrapper {
-        max-width: 1200px;
         overflow: hidden;
     }
 }
@@ -310,11 +310,11 @@ h1 {
     display: none;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 750px) {
     .back-globe {
         display: block;
         position: absolute;
-        max-width: 85%;
+        max-width: 80%;
         right: 0;
         bottom: -70px;
         z-index: -99;
@@ -373,7 +373,7 @@ article p {
 
 @media (min-width: 900px) {
     article p {
-        font-size: 1.1rem;
+        font-size: 1rem;
         margin: 0;
     }
 }
@@ -432,21 +432,21 @@ article p {
     margin: 1.2rem 0;
 }
 
-/* @media (min-width: 900px) {
+@media (min-width: 900px) {
     .skills-list-wrapper div {
-        margin: 1.2rem 0;
+        margin: 1.5rem 0;
     }
+}
+
+/* .skills-list-wrapper div p {
+    height: 100%;
 } */
 
-.skills-list-wrapper div p {
-    height: 2.5vh;
-}
-
-@media (min-width: 900px) {
+/* @media (min-width: 900px) {
     .skills-list-wrapper div p {
-        height: 2.85vh;
+        height: 2rem;
     }
-}
+} */
 
 div > .top-skill {
     margin-top: .7rem;
@@ -466,19 +466,17 @@ div > .last-skill {
     background-color: rgb(5, 17, 242);
     border-radius: 0.2rem;
     font-size: .9rem;
-    margin: 0;
+    margin: auto 0;
     padding: .12rem;
     padding-left: .6rem;
     color: white;
-    display: inline-flex;
-    align-items: center;
 }
 
 @media (min-width: 900px) {
     .skills-text {
-        font-size: .9rem;
-        padding: .21rem;
-        padding-left: .42rem;
+        font-size: .85rem;
+        padding: .4rem;
+        padding-left: .45rem;
     }
 }
 
